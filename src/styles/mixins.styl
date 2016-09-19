@@ -1,4 +1,70 @@
 contain(width, maxWidth) {
   width: width;
-  max-width: maxWidth
+  max-width: maxWidth;
 }
+
+marginCenter() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\
+// Margin Mixins  // \\ // \\ // \\ // \\ // \\
+// \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\
+
+mt(x) {
+  margin-top x
+}
+
+mr(x) {
+  margin-right x
+}
+
+mb(x) {
+  margin-bottom x
+}
+
+ml(x) {
+  margin-left x
+}
+
+mar(x) {
+  margin x
+}
+
+
+// \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\
+// Padding Mixins // \\ // \\ // \\ // \\ // \\
+// \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\
+
+pt(x) {
+  padding-top x
+}
+
+pr(x) {
+  padding-right x
+}
+
+pb(x) {
+  padding-bottom x
+}
+
+pl(x) {
+  padding-left x
+}
+
+pad(x) {
+  padding x
+}
+
+
+
+
+hideBetween(min, max)
+  @media screen and (min-width: min) and (max-width: max)
+    display none
+
+hideBelow(min)
+  @media screen and (min-width: min)
+    display none

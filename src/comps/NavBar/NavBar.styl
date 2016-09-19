@@ -2,33 +2,49 @@
 @import '../../styles/mixins'
 @import '../../styles/grid'
 
-.NavBar {
-  width: 100%;
+.NavBar
+  width 100%
 
-  nav {
-    row(between, center);
-    contain(100%, 992px);
+.NavBar nav
+  height 60px
+  row(between, center)
+  contain(100%, 992px)
+  marginCenter()
+  pr(10px)
+  pl(10px)
 
-  }
+#logo
+  font-size 2.6rem
+
+#nav-links
+  position absolute
+  font-size 1.2rem
+  column(end, center)
+  top -300px
+  right 0px
+  transition 1s
+
+  &.down
+    top 60px
 
 
-  #nav-links {
-    position: absolute;
-    font-size: 1.2rem;
-    column(end, center);
-    top: -300px;
-    right: 0px;
-    transition: 1s;
-    background: red;
-    &.down {
-      top: 100px;
-    }
-    li {
-      list-style-type: none;
-    }
-  }
-  #expand-icon {
-    width: 20px;
-  }
 
-}
+#nav-links li
+  list-style-type none
+  font-size 2rem
+
+#expand-icon
+  width 35px
+
+
+
+@media screen and (min-width: 768px)
+  #nav-links
+    position static
+    row(end, center)
+
+  #nav-links li
+    margin-left 15px
+
+  #expand-icon
+    display none
