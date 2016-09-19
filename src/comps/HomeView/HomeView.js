@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import style from './($COMP).($CSS)'
+import style from './HomeView.styl'
 
-export default class ($COMP) extends Component {
+export default class HomeView extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -10,7 +10,8 @@ export default class ($COMP) extends Component {
 
   render() {
     return(
-      <div className="($COMP)">
+      <div className="HomeView">
+      <h1>Home</h1>
       </div>
     )
   }

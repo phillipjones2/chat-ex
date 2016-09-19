@@ -1,17 +1,17 @@
 module.exports = {
   entry: "./src/entry.js",
   output: {
-    path: __dirname + "build",
+    path: __dirname + "/build",
     filename: "bundle.js"
   },
   module: {
     loaders: [
       {
-        test: /\.styl$/,
-        loader: "style-loader!css-loader!stylus-loader"
-      },
+				test: /\.styl$/,
+				loader: 'style-loader!css-loader!stylus-loader'
+			},
       {
-        test: /\.jsx$/,
+        test: /\.(jsx|js)$/,
         exclude: /(node_modules | bower_conponents)/,
         loader: 'babel',
         query: {
