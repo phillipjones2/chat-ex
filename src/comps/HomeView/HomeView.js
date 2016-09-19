@@ -11,7 +11,7 @@ export default class HomeView extends Component {
   render() {
     return(
       <div className="HomeView">
-      <h1>Home</h1>
+      <h3>Happy {this.props.happy}</h3>
       </div>
     )
   }
