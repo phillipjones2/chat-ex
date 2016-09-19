@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import style from './HomeView.styl'
+import style from './NavBar.styl'
 
-export default class HomeView extends Component {
+export default class NavBar extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -10,10 +10,9 @@ export default class HomeView extends Component {
 
   render() {
     return(
-      <div className="HomeView">
-      <h3>Happy {this.props.happy}</h3>
+      <div className="NavBar">
+
       </div>
-      <componet>
     )
   }
 }

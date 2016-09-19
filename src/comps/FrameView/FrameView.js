@@ -2,16 +2,13 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import style from './FrameView.styl'
 
+import NavBar from '../NavBar/NavBar'
+
 export default class FrameView extends Component {
   constructor(props) {
     super(props)
     this.state = {
       anything: "new new state!"
-    }
-    this.stated = () => {
-      this.setState({
-        anything: "cats"
-      })
     }
   }
 
@@ -23,7 +20,7 @@ export default class FrameView extends Component {
     )
     return(
       <div className="FrameView">
-        <h1 onClick={this.stated}>Frame</h1>
+        <NavBar />
         {childrenWithProps}
       </div>
     )
