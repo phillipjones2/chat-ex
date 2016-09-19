@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 import style from './FrameView.styl'
+import "../../styles/reset.styl"
 
 import NavBar from '../NavBar/NavBar'
 

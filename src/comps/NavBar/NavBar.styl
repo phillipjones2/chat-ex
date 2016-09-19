@@ -3,8 +3,32 @@
 @import '../../styles/grid'
 
 .NavBar {
+  width: 100%;
 
   nav {
-    display: flex;
+    row(between, center);
+    contain(100%, 992px);
+
   }
+
+
+  #nav-links {
+    position: absolute;
+    font-size: 1.2rem;
+    column(end, center);
+    top: -300px;
+    right: 0px;
+    transition: 1s;
+    background: red;
+    &.down {
+      top: 100px;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+  #expand-icon {
+    width: 20px;
+  }
+
 }

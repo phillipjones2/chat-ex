@@ -7,6 +7,10 @@ export default class NavBar extends Component {
   constructor(props) {
     super(props)
     this.state = {}
+    this.expandLinks = () => {
+      const navLinks = document.getElementById('nav-links')
+      navLinks.classList.toggle('down')
+    }
   }
 
   render() {
@@ -20,7 +24,7 @@ export default class NavBar extends Component {
             <li>login</li>
             <li>register</li>
           </ul>
-          <Hamburger id="expand-icon" />
+          <Hamburger onClick={this.expandLinks} id="expand-icon" />
         </nav>
       </div>
     )
