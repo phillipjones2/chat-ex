@@ -1,0 +1,19 @@
+{
+  "name": "chat-ex",
+  "version": "1.0.0",
+  "description": "\"My first socket.io app\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipjones2/chat-ex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipjones2/chat-ex/issues"
+  },
+  "homepage": "https://github.com/phillipjones2/chat-ex#readme"
+}
