@@ -13,7 +13,6 @@ export default class HomeView extends Component {
       <div className="HomeView">
       <h3>Happy {this.props.happy}</h3>
       </div>
-      <componet>
     )
   }
 }
