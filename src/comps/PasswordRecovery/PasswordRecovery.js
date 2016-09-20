@@ -11,12 +11,12 @@ export default class PasswordRecovery extends Component {
   render() {
     return(
       <div className="PasswordRecovery">
-      <form>
-        <h3>Need to Reset your password? </h3>
-        <input placeholder="email"/>
-        <p onClick={this.props.toRecoveryForm}>Back to Login</p>
-        <button>Submit</button>
-      </form>
+        <form>
+          <h3>Need to Reset your password? </h3>
+          <input placeholder="email"/>
+          <p onClick={this.props.toRecoveryForm}>Back to Login</p>
+          <button>Submit</button>
+        </form>
       </div>
     )
   }

@@ -10,6 +10,8 @@ export default class LoginForm extends Component {
     this.state = {
       showPasswordRecovery: false
     }
+    
+
     this.toRecoveryForm = () => {
       this.setState({
         showPasswordRecovery: !this.state.showPasswordRecovery
@@ -19,21 +21,21 @@ export default class LoginForm extends Component {
 
 
   render() {
-    const LoginForm = (<form>
-              <h3>Login</h3>
-              <input placeholder="username"/>
-              <input placeholder="password" type="password"/>
-              <p onClick={this.toRecoveryForm}>Forgot password?</p>
-              <button>Submit</button>
-            </form>)
+    const LoginForm =
+      <form>
+        <h3>Login</h3>
+        <input placeholder="username"/>
+        <input placeholder="password" type="password"/>
+        <p onClick={this.toRecoveryForm}>Forgot password?</p>
+        <button>Submit</button>
+      </form>
 
     const form = (() => {
       if (this.state.showPasswordRecovery) {
         return <PasswordRecovery toRecoveryForm={this.toRecoveryForm}/>
-      } else {
-        return LoginForm
-      }
+      } else { return LoginForm }
     })()
+
     return(
       <div className="LoginForm">
         {form}

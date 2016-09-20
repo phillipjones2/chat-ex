@@ -10,14 +10,14 @@ export default class RegisterForm extends Component {
   render() {
     return(
       <div className="RegisterForm">
-      <form>
-        <h3>Register</h3>
-        <input placeholder="email"/>
-        <input placeholder="username"/>
-        <input placeholder="password" type="password"/>
-        <input placeholder="confirm password" type="password"/>
-        <button>Submit</button> 
-      </form>
+        <form>
+          <h3>Register</h3>
+          <input placeholder="email"/>
+          <input placeholder="username"/>
+          <input placeholder="password" type="password"/>
+          <input placeholder="confirm password" type="password"/>
+          <button>Submit</button>
+        </form>
       </div>
     )
   }
