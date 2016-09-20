@@ -54,6 +54,14 @@ h1
 h2
   font-size 3.2rem
 
+input
+  &::-webkit-input-placeholder
+    transition 1s all
+
+  &:focus::-webkit-input-placeholder
+    opacity: 0
+
+
 
 #root
   width 100%
