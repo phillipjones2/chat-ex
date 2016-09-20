@@ -19,10 +19,10 @@ export default class NavBar extends Component {
         <nav>
           <p id="logo">LOGO</p>
           <ul id="nav-links">
-            <li>about</li>
-            <li>contact</li>
-            <li>login</li>
-            <li>register</li>
+            <Link to="/about"><li>about</li></Link>
+            <Link to="/contact"><li>contact</li></Link>
+            <Link to="/login"><li>login</li></Link>
+            <Link to="/register"><li>register</li></Link>
           </ul>
           <Hamburger onClick={this.expandLinks} id="expand-icon" />
         </nav>
