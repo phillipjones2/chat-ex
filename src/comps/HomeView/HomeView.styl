@@ -3,5 +3,19 @@
 @import '../../styles/grid'
 
 .HomeView {
+  width 100%
   column(start, start)
 }
+
+.HomeView > div {
+  contain(100%, 992px)
+  column(center, start)
+  pr(15px)
+  pl(15px)
+  marginCenter()
+  background white
+}
+
+.HomeView > div > p
+  font-size 1.8rem
+  mt(25px)
