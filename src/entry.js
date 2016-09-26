@@ -6,17 +6,9 @@ import {
   Router,
   Route
 } from 'react-router'
-
-import FrameView from './comps/FrameView/FrameView'
-import HomeView from './comps/HomeView/HomeView'
-
+import routes from './comps/routes'
 
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={FrameView}>
-      <IndexRoute component={HomeView}></IndexRoute>
-      {/* <Route path="/////" component="////"></Route> */}
-    </Route>
-  </Router>,
+  <Router routes={routes} history={browserHistory} />,
   document.getElementById('root')
 )
